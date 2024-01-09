@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace moter_bill_check
+{
+    internal class Program
+
+    {
+
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("Enter the Current Bill:");
+            float currentbill = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter units consume :");
+            float unitsconsume = Convert.ToInt32(Console.ReadLine());
+            float rateperunit = (currentbill / unitsconsume);
+            Console.WriteLine("Rate per unit is =Rs " + rateperunit);
+            Console.WriteLine("Enter Sub meter units  :");
+            float submeterunits = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter last month moters units:");
+            float lastmonthunits = Convert.ToInt32(Console.ReadLine());
+            float totalunitsuse = (submeterunits - lastmonthunits);
+            Console.WriteLine("Moter consume units in this month are = Rs " + totalunitsuse);
+            float submeterbill = (rateperunit * totalunitsuse);
+            Console.WriteLine("Total moter bill of this Month is =Rs " + submeterbill);
+            float rupeesperhouse = submeterbill / 3;
+            Console.WriteLine("Amount to pay per house is = Rs " + rupeesperhouse);
+            Console.ReadLine();
+        }
+    }
+
+}
+
