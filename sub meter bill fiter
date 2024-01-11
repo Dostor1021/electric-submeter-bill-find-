@@ -12,6 +12,7 @@ namespace moter_bill_check
 
         static void Main(string[] args)
         {
+            Console.WriteLine("I am Usman:");  
             Console.WriteLine("I am ASif:");  
             Console.WriteLine("Enter the Current Bill:");
             float currentbill = Convert.ToInt32(Console.ReadLine());
