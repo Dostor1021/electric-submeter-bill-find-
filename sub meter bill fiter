@@ -29,6 +29,8 @@ namespace moter_bill_check
             Console.WriteLine("Total moter bill of this Month is =Rs " + submeterbill);
             float rupeesperhouse = submeterbill / 3;
             Console.WriteLine("Amount to pay per house is = Rs " + rupeesperhouse);
+            Console.WriteLine("end line :");
+            Console.WriteLine("end program :");
             Console.ReadLine();
         }
     }
